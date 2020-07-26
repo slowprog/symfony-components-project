@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+    app:
+        image: slowprog/php-docker:7.3-web
+        hostname: localhost.app
+        container_name: localhost.app
+        ports:
+            - 8081:80
+        volumes:
+            - './:/app:rw'
